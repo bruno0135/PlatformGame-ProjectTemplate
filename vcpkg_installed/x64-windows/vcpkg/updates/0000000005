@@ -1,0 +1,7 @@
+Package: sdl3-image
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support for JPEG image format
+Status: purge ok not-installed

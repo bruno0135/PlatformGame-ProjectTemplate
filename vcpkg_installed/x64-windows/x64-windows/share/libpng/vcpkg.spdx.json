@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libpng-x64-windows-1.6.50-f319cb52-fdae-4c18-95de-daa05e52d38a",
-  "name": "libpng:x64-windows@1.6.50 2405ac414d4e07331550bab3f8c00423d6c6815520b5942866f457475d443e97",
+  "documentNamespace": "https://spdx.org/spdxdocs/libpng-x64-windows-1.6.50-3be7cb9f-111c-4e78-bba7-5105ad8fd708",
+  "name": "libpng:x64-windows@1.6.50 3d14317e69a51f3a27330c0bde02277b40f22f39d9a1f0fab4e7b8131a9dccf4",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-2025-04-01-9c604254140797833b6f76908435c9fcbf09920e"
+      "Tool: vcpkg-2024-12-09-1005b78fa1bf1dde1a20c2734cba4ea61ca94d9a"
     ],
-    "created": "2025-10-13T07:35:25Z"
+    "created": "2025-10-24T19:27:51Z"
   },
   "relationships": [
     {
@@ -81,11 +81,6 @@
       "spdxElementId": "SPDXRef-file-5",
       "relationshipType": "CONTAINED_BY",
       "relatedSpdxElement": "SPDXRef-port"
-    },
-    {
-      "spdxElementId": "SPDXRef-file-5",
-      "relationshipType": "DEPENDENCY_MANIFEST_OF",
-      "relatedSpdxElement": "SPDXRef-port"
     }
   ],
   "packages": [
@@ -104,7 +99,7 @@
     {
       "name": "libpng:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "2405ac414d4e07331550bab3f8c00423d6c6815520b5942866f457475d443e97",
+      "versionInfo": "3d14317e69a51f3a27330c0bde02277b40f22f39d9a1f0fab4e7b8131a9dccf4",
       "downloadLocation": "NONE",
       "licenseConcluded": "libpng-2.0",
       "licenseDeclared": "NOASSERTION",
@@ -129,7 +124,7 @@
       "SPDXID": "SPDXRef-resource-1",
       "name": "${LIBPNG_APNG_PATCH_NAME}.gz",
       "packageFileName": "${LIBPNG_APNG_PATCH_NAME}.gz",
-      "downloadLocation": "https://downloads.sourceforge.net/project/libpng-apng/libpng16/1.6.50/${LIBPNG_APNG_PATCH_NAME}.gz",
+      "downloadLocation": "https://downloads.sourceforge.net/project/libpng-apng/libpng16/${VERSION}/${LIBPNG_APNG_PATCH_NAME}.gz",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
@@ -143,7 +138,7 @@
   ],
   "files": [
     {
-      "fileName": "./cmake.patch",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/54b6eefbef1cb0f477c6eb54e2236badd140feea/cmake.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -155,7 +150,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./libpng-config.cmake",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/54b6eefbef1cb0f477c6eb54e2236badd140feea/libpng-config.cmake",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -167,7 +162,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./portfile.cmake",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/54b6eefbef1cb0f477c6eb54e2236badd140feea/portfile.cmake",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -179,7 +174,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./usage",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/54b6eefbef1cb0f477c6eb54e2236badd140feea/usage",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -191,7 +186,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./vcpkg-cmake-wrapper.cmake",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/54b6eefbef1cb0f477c6eb54e2236badd140feea/vcpkg-cmake-wrapper.cmake",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -203,7 +198,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./vcpkg.json",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/54b6eefbef1cb0f477c6eb54e2236badd140feea/vcpkg.json",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {

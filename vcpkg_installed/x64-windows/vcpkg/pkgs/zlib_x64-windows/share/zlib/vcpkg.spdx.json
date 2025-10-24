@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/zlib-x64-windows-1.3.1-d69ffa4e-8ef3-494e-b61a-32193dfef2ba",
-  "name": "zlib:x64-windows@1.3.1 5f7a837b41389cb6eb963fe5b2cf8413b178789d76321d42f5e2b2a062823616",
+  "documentNamespace": "https://spdx.org/spdxdocs/zlib-x64-windows-1.3.1-5d2828cd-4e9f-480b-9cc4-94ae92c852b3",
+  "name": "zlib:x64-windows@1.3.1 7e708e49d0f2302bdd45871517178288e8a3d1a260c7f34b07e0c35ae9cb7751",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-2025-04-01-9c604254140797833b6f76908435c9fcbf09920e"
+      "Tool: vcpkg-2024-12-09-1005b78fa1bf1dde1a20c2734cba4ea61ca94d9a"
     ],
-    "created": "2025-10-13T07:35:18Z"
+    "created": "2025-10-24T19:27:33Z"
   },
   "relationships": [
     {
@@ -91,11 +91,6 @@
       "spdxElementId": "SPDXRef-file-6",
       "relationshipType": "CONTAINED_BY",
       "relatedSpdxElement": "SPDXRef-port"
-    },
-    {
-      "spdxElementId": "SPDXRef-file-6",
-      "relationshipType": "DEPENDENCY_MANIFEST_OF",
-      "relatedSpdxElement": "SPDXRef-port"
     }
   ],
   "packages": [
@@ -114,7 +109,7 @@
     {
       "name": "zlib:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "5f7a837b41389cb6eb963fe5b2cf8413b178789d76321d42f5e2b2a062823616",
+      "versionInfo": "7e708e49d0f2302bdd45871517178288e8a3d1a260c7f34b07e0c35ae9cb7751",
       "downloadLocation": "NONE",
       "licenseConcluded": "Zlib",
       "licenseDeclared": "NOASSERTION",
@@ -138,7 +133,7 @@
   ],
   "files": [
     {
-      "fileName": "./0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -150,7 +145,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./0002-build-static-or-shared-not-both.patch",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/0002-build-static-or-shared-not-both.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -162,7 +157,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./0003-android-and-mingw-fixes.patch",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/0003-android-and-mingw-fixes.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -174,7 +169,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./portfile.cmake",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/portfile.cmake",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -186,7 +181,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./usage",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/usage",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -198,7 +193,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./vcpkg-cmake-wrapper.cmake",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/vcpkg-cmake-wrapper.cmake",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {
@@ -210,7 +205,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./vcpkg.json",
+      "fileName": "./C:/Users/bruno/AppData/Local/vcpkg/registries/git-trees/3f05e04b9aededb96786a911a16193cdb711f0c9/vcpkg.json",
       "SPDXID": "SPDXRef-file-6",
       "checksums": [
         {
