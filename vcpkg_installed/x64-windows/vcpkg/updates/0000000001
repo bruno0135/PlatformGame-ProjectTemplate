@@ -1,0 +1,7 @@
+Package: sdl3-image
+Feature: png
+Depends: libpng
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support for PNG image format
+Status: purge ok half-installed

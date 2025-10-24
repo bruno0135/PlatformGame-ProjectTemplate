@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/brunogs1/Downloads/PlatformGame-ProjectTemplate/PlatformGame-ProjectTemplate/vcpkg_installed/x64-windows/vcpkg/pkgs/detect_compiler_x64-windows")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/bruno/Documents/GitHub/PlatformGame-ProjectTemplate/vcpkg_installed/x64-windows/vcpkg/pkgs/detect_compiler_x64-windows")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -47,6 +47,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/brunogs1/Downloads/PlatformGame-ProjectTemplate/PlatformGame-ProjectTemplate/vcpkg_installed/x64-windows/vcpkg/blds/detect_compiler/x64-windows-rel/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/bruno/Documents/GitHub/PlatformGame-ProjectTemplate/vcpkg_installed/x64-windows/vcpkg/blds/detect_compiler/x64-windows-rel/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
