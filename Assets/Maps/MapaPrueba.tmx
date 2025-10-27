@@ -25,7 +25,7 @@
   <image source="PixelFantasy_Caves_1.0-20251024T065613Z-1-001/PixelFantasy_Caves_1.0/mainlev_build.png" width="1024" height="1024"/>
  </tileset>
  <tileset firstgid="6121" name="MapMetadata" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="2" columns="2">
-  <image source="PlatformGame-L10_Animations_Parameters/PlatformGame-L10_Animations_Parameters/Assets/Maps/MapMetadata.png" width="67" height="34"/>
+  <image source="../../../../PlatformGame-L10_Animations_Parameters/PlatformGame-L10_Animations_Parameters/Assets/Maps/MapMetadata.png" width="67" height="34"/>
  </tileset>
  <layer id="11" name="Capa de patrones 5" width="100" height="15">
   <properties>
@@ -6061,105 +6061,105 @@
   </properties>
   <data>
    <tile gid="992"/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="965"/>
+   <tile gid="993"/>
    <tile gid="990"/>
    <tile/>
    <tile/>
@@ -6259,7 +6259,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="977"/>
    <tile gid="990"/>
    <tile/>
    <tile/>
@@ -6359,7 +6359,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="977"/>
    <tile gid="990"/>
    <tile/>
    <tile/>
@@ -6459,7 +6459,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="977"/>
    <tile gid="990"/>
    <tile/>
    <tile/>
@@ -6559,7 +6559,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="977"/>
    <tile gid="990"/>
    <tile/>
    <tile/>
@@ -6659,7 +6659,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="977"/>
    <tile gid="990"/>
    <tile/>
    <tile/>
@@ -6759,8 +6759,8 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
-   <tile/>
+   <tile gid="977"/>
+   <tile gid="976"/>
    <tile/>
    <tile/>
    <tile/>
@@ -6860,7 +6860,7 @@
    <tile gid="1010"/>
    <tile gid="1010"/>
    <tile gid="995"/>
-   <tile/>
+   <tile gid="976"/>
    <tile/>
    <tile/>
    <tile/>
@@ -6960,7 +6960,7 @@
    <tile gid="1010"/>
    <tile gid="1010"/>
    <tile gid="977"/>
-   <tile/>
+   <tile gid="976"/>
    <tile/>
    <tile/>
    <tile/>
@@ -7562,9 +7562,9 @@
    <tile gid="977"/>
   </data>
  </layer>
- <layer id="13" name="Colliders" width="100" height="15">
+ <layer id="13" name="Collisions" width="100" height="15">
   <properties>
-   <property name="Draw" type="bool" value="true"/>
+   <property name="Draw" type="bool" value="false"/>
   </properties>
   <data>
    <tile gid="6121"/>
@@ -8988,21 +8988,6 @@
    <tile gid="6121"/>
    <tile gid="6121"/>
    <tile gid="6121"/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile gid="6121"/>
-   <tile/>
-   <tile/>
    <tile gid="6121"/>
    <tile gid="6121"/>
    <tile gid="6121"/>
@@ -9020,37 +9005,52 @@
    <tile gid="6121"/>
    <tile gid="6121"/>
    <tile gid="6121"/>
-   <tile/>
-   <tile/>
-   <tile/>
    <tile gid="6121"/>
    <tile gid="6121"/>
    <tile gid="6121"/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
+   <tile gid="6121"/>
    <tile gid="6121"/>
    <tile gid="6121"/>
    <tile gid="6121"/>
@@ -9070,10 +9070,13 @@
   </data>
  </layer>
  <objectgroup id="14" name="Capa de Objetos 1">
+  <properties>
+   <property name="Draw" type="bool" value="false"/>
+  </properties>
   <object id="3" x="293.333" y="196" width="148" height="56"/>
-  <object id="4" x="13.3333" y="328" width="238.667" height="52"/>
-  <object id="5" x="5.33333" y="328" width="24" height="150.667"/>
-  <object id="6" x="30.6667" y="450.667" width="641.333" height="30.6667"/>
+  <object id="4" x="2.3333" y="323" width="252.667" height="59"/>
+  <object id="5" x="0.33333" y="320" width="30" height="162.667"/>
+  <object id="6" x="30.6667" y="449.667" width="641.333" height="31.6667"/>
   <object id="7" x="512" y="414.667" width="160" height="32"/>
   <object id="8" x="545.333" y="94.6667" width="158.667" height="66.6667"/>
   <object id="9" x="836" y="158.667" width="190.667" height="65.3333"/>
