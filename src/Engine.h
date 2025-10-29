@@ -45,6 +45,12 @@ public:
 		return dt;
 	}
 
+	// Debug flags getters
+	bool IsHelpShown() const { return showHelp; }
+	bool IsGodMode() const { return godMode; }
+	bool IsCap30() const { return cap30; }
+	int  GetTargetFrameRate() const { return targetFrameRate; }
+
 private:
 
 	// Private constructor to prevent instantiation
@@ -72,6 +78,9 @@ private:
 
 	// Load config file
 	bool LoadConfig();
+
+	// Handle debug hotkeys (H/F10/F11)
+	void HandleDebugKeys();
 
 	std::list<std::shared_ptr<Module>> moduleList;
 
@@ -102,12 +111,12 @@ public:
 	std::shared_ptr<Physics> physics;
 
 
-private: 
+private:
 
 	// Delta time
-	float dt; 
+	float dt = 0.0f;
 	//Frames since startup
-	int frames;
+	int frames = 0;
 
 	// Calculate timing measures
 	// required variables are provided:
@@ -130,4 +139,8 @@ private:
 	//L05 TODO 2: Declare a xml_document to load the config file
 	pugi::xml_document configFile;
 
+	// Debug flags
+	bool showHelp = false;
+	bool godMode = false;
+	bool cap30 = false;
 };
