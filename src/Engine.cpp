@@ -13,7 +13,7 @@
 #include "Map.h"
 #include "Physics.h"
 #include "Log.h"
-#include <SDL3/SDL_keycode.h>
+#include "Player.h" // para castear a Player
 
 // Constructor
 Engine::Engine() {
@@ -298,9 +298,22 @@ void Engine::HandleDebugKeys()
     if (input->GetKey(SDL_SCANCODE_H) == KEY_DOWN)
         showHelp = !showHelp;
 
-    // F10: God Mode
+    // F10: God Mode -> localizar Player en EntityManager y hacer toggle
     if (input->GetKey(SDL_SCANCODE_F10) == KEY_DOWN)
-        godMode = !godMode;
+    {
+        if (entityManager)
+        {
+            for (const auto& e : entityManager->entities)
+            {
+                if (e && e->type == EntityType::PLAYER)
+                {
+                    Player* p = dynamic_cast<Player*>(e.get());
+                    if (p) { p->ToggleGodMode(); }
+                    break;
+                }
+            }
+        }
+    }
 
     // F11: 30 FPS cap toggle
     if (input->GetKey(SDL_SCANCODE_F11) == KEY_DOWN)

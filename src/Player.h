@@ -12,7 +12,7 @@ class Player : public Entity
 public:
 
 	Player();
-	
+
 	virtual ~Player();
 
 	bool Awake();
@@ -26,6 +26,10 @@ public:
 	// L08 TODO 6: Define OnCollision function for the player. 
 	void OnCollision(PhysBody* physA, PhysBody* physB);
 	void OnCollisionEnd(PhysBody* physA, PhysBody* physB);
+
+	// --- GOD MODE (público para que el motor pueda hacer toggle) ---
+	void ToggleGodMode();
+	void HandleGodMode(float dt);
 
 private:
 
@@ -42,18 +46,20 @@ public:
 	float speed = 4.0f;
 	SDL_Texture* texture = NULL;
 
-	int texW, texH;
+	int texW = 0, texH = 0;
 
 	//Audio fx
-	int pickCoinFxId;
+	int pickCoinFxId = 0;
 
 	// L08 TODO 5: Add physics to the player - declare a Physics body
-	PhysBody* pbody;
+	PhysBody* pbody = nullptr;
 	float jumpForce = 2.5f; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping
 
-private: 
-	b2Vec2 velocity;
+private:
+	b2Vec2 velocity = { 0.0f, 0.0f };
 	AnimationSet anims;
 
+	// --- GOD MODE ---
+	bool godMode = false;
 };

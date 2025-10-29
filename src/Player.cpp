@@ -61,6 +61,10 @@ bool Player::Update(float dt)
 	Jump();
 	Teleport();
 	ApplyPhysics();
+
+	// --- GOD MODE (solo WASD) ---
+	HandleGodMode(dt);
+
 	Draw(dt);
 
 	return true;
@@ -76,11 +80,11 @@ void Player::Teleport() {
 void Player::GetPhysicsValues() {
 	// Read current velocity
 	velocity = Engine::GetInstance().physics->GetLinearVelocity(pbody);
-	velocity = { 0, velocity.y }; // Reset horizontal velocity by default, this way the player stops when no key is pressed
+	velocity = { 0.0f, velocity.y }; // Reset horizontal velocity by default, this way the player stops when no key is pressed
 }
 
 void Player::Move() {
-	
+
 	// Move left/right
 	if (Engine::GetInstance().input->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
 		velocity.x = -speed;
@@ -124,10 +128,10 @@ void Player::Draw(float dt) {
 
 	//L10: TODO 7: Center the camera on the player
 	Vector2D mapSize = Engine::GetInstance().map->GetMapSizeInPixels();
-	float limitLeft = Engine::GetInstance().render->camera.w / 4;
-	float limitRight = mapSize.getX() - Engine::GetInstance().render->camera.w * 3 / 4;
+	float limitLeft = Engine::GetInstance().render->camera.w / 4.0f;
+	float limitRight = mapSize.getX() - Engine::GetInstance().render->camera.w * 3.0f / 4.0f;
 	if (position.getX() - limitLeft > 0 && position.getX() < limitRight) {
-		Engine::GetInstance().render->camera.x = -position.getX() + Engine::GetInstance().render->camera.w / 4;
+		Engine::GetInstance().render->camera.x = -position.getX() + Engine::GetInstance().render->camera.w / 4.0f;
 	}
 
 	// L10: TODO 5: Draw the player using the texture and the current animation frame
@@ -143,6 +147,8 @@ bool Player::CleanUp()
 
 // L08 TODO 6: Define OnCollision function for the player. 
 void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
+	if (godMode) return; // no daño en God Mode
+
 	switch (physB->ctype)
 	{
 	case ColliderType::PLATFORM:
@@ -182,3 +188,30 @@ void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
 	}
 }
 
+// God Mode 
+void Player::ToggleGodMode()
+{
+	godMode = !godMode;
+	LOG(godMode ? "God Mode: ON" : "God Mode: OFF");
+
+	// Anula inercia previa al activarlo
+	if (pbody && godMode)
+		Engine::GetInstance().physics->SetLinearVelocity(pbody, { 0.0f, 0.0f });
+}
+
+void Player::HandleGodMode(float dt)
+{
+	if (!godMode || !pbody) return;
+
+	// Solo WASD
+	const float GOD_SPEED = 8.0f;
+	float vx = 0.0f;
+	float vy = 0.0f;
+
+	if (Engine::GetInstance().input->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) vx -= GOD_SPEED;
+	if (Engine::GetInstance().input->GetKey(SDL_SCANCODE_D) == KEY_REPEAT) vx += GOD_SPEED;
+	if (Engine::GetInstance().input->GetKey(SDL_SCANCODE_W) == KEY_REPEAT) vy -= GOD_SPEED;
+	if (Engine::GetInstance().input->GetKey(SDL_SCANCODE_S) == KEY_REPEAT) vy += GOD_SPEED;
+
+	Engine::GetInstance().physics->SetLinearVelocity(pbody, { vx, vy });
+}
