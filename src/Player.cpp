@@ -115,26 +115,67 @@ void Player::ApplyPhysics() {
 	Engine::GetInstance().physics->SetLinearVelocity(pbody, velocity);
 }
 
-void Player::Draw(float dt) {
-
+void Player::Draw(float dt)
+{
 	anims.Update(dt);
 	const SDL_Rect& animFrame = anims.GetCurrentFrame();
 
-	// Update render position using your PhysBody helper
 	int x, y;
 	pbody->GetPosition(x, y);
 	position.setX((float)x);
 	position.setY((float)y);
 
-	//L10: TODO 7: Center the camera on the player
+	// TODO: Centrar cámara en el jugador (Implementación final con límites de mapa)
+
 	Vector2D mapSize = Engine::GetInstance().map->GetMapSizeInPixels();
-	float limitLeft = Engine::GetInstance().render->camera.w / 4.0f;
-	float limitRight = mapSize.getX() - Engine::GetInstance().render->camera.w * 3.0f / 4.0f;
-	if (position.getX() - limitLeft > 0 && position.getX() < limitRight) {
-		Engine::GetInstance().render->camera.x = -position.getX() + Engine::GetInstance().render->camera.w / 4.0f;
+	int cameraW = Engine::GetInstance().render->camera.w;
+	int cameraH = Engine::GetInstance().render->camera.h;
+
+	// --- 1. CÁLCULO DE POSICIÓN DESEADA (HORIZONTAL) ---
+	// Mantiene al jugador a 1/4 del ancho de la pantalla (el offset)
+	float cameraOffsetX = cameraW / 4.0f;
+	int desiredCameraX = (int)(-position.getX() + cameraOffsetX);
+
+	// --- 2. APLICAR LÍMITES DE MAPA (HORIZONTAL) ---
+
+	// El límite MÁXIMO (borde izquierdo del mapa) es 0
+	if (desiredCameraX > 0)
+		desiredCameraX = 0;
+
+	// El límite MÍNIMO (borde derecho del mapa)
+	// 'maxCameraX' es el punto X del mapa donde debe detenerse la cámara
+	int maxCameraX = (int)(mapSize.getX() - cameraW);
+	int minCameraX = (int)-maxCameraX;
+
+	// Solo aplicamos el límite derecho si el mapa es más grande que la cámara
+	if (mapSize.getX() > cameraW)
+	{
+		if (desiredCameraX < minCameraX)
+			desiredCameraX = minCameraX;
 	}
 
-	// L10: TODO 5: Draw the player using the texture and the current animation frame
+	Engine::GetInstance().render->camera.x = desiredCameraX;
+
+	
+	float cameraOffsetY = cameraH / 2.0f;
+	int desiredCameraY = (int)(-position.getY() + cameraOffsetY);
+
+	// Límite superior (MAXIMO)
+	if (desiredCameraY > 0)
+		desiredCameraY = 0;
+
+	// Límite inferior (MINIMO)
+	int maxCameraY = (int)(mapSize.getY() - cameraH);
+	int minCameraY = (int)-maxCameraY;
+
+	if (mapSize.getY() > cameraH) {
+		if (desiredCameraY < minCameraY)
+			desiredCameraY = minCameraY;
+	}
+
+	Engine::GetInstance().render->camera.y = desiredCameraY;
+	
+
 	Engine::GetInstance().render->DrawTexture(texture, x - texW / 2, y - texH / 2, &animFrame);
 }
 
