@@ -30,11 +30,11 @@ bool Player::Start() {
 
 	// load
 	std::unordered_map<int, std::string> aliases = { {0,"idle"},{11,"move"},{22,"jump"} };
-	anims.LoadFromTSX("Assets/Textures/PLayer2_Spritesheet.tsx", aliases);
+	anims.LoadFromTSX("Assets/Textures/player1Spritesheet.tsx", aliases);
 	anims.SetCurrent("idle");
 
 	//L03: TODO 2: Initialize Player parameters
-	texture = Engine::GetInstance().textures->Load("Assets/Textures/player2_spritesheet.png");
+	texture = Engine::GetInstance().textures->Load("Assets/Textures/player1_spritesheet.png");
 
 	// L08 TODO 5: Add physics to the player - initialize physics body
 	//Engine::GetInstance().textures->GetSize(texture, texW, texH);
