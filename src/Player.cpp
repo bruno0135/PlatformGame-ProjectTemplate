@@ -32,6 +32,10 @@ bool Player::Start() {
 	std::unordered_map<int, std::string> aliases = { {0,"idle"},{11,"move"},{22,"jump"} };
 	anims.LoadFromTSX("Assets/Textures/player1Spritesheet.tsx", aliases);
 	anims.SetCurrent("idle");
+	anims.SetCurrent("move");
+	anims.SetCurrent("jump");
+
+
 
 	//L03: TODO 2: Initialize Player parameters
 	texture = Engine::GetInstance().textures->Load("Assets/Textures/player1_spritesheet.png");
